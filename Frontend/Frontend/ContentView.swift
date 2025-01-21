@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Image("Image Name")
+        Text("NextRep!!")
     }
 }
 
