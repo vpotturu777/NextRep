@@ -17,6 +17,16 @@ struct Home: View {
             }
             .padding(30)
             
+            HStack {
+                Text("View **Workouts**")
+                    .font(.system(size: 24))
+                Spacer()
+                Image(systemName: "arrow.right")
+                    .imageScale(.large)
+            }
+            .padding(.horizontal, 30)
+            .padding(.vertical, 15)
+            
             // List of Workouts
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
@@ -154,7 +164,8 @@ struct WorkoutCard: View {
             .frame(width: 336, height: 422)
             .background(Color.blue.opacity(0.2))
             .clipShape(RoundedRectangle(cornerRadius: 57))
-            .padding(.leading, 20)
+            .padding(25.0)
+            .padding(10)
         }
     }
 }
